@@ -30,10 +30,7 @@ namespace PalindromicSubstrings.OutputFormatters
             {
                 return new List<string>();
             }
-
-            //var formatted = new List<Substring>(toBeFormatted);
-
-            //--
+                                    
             List<Substring> formatted = new List<Substring>();
 
             foreach (var substring in toBeFormatted)
@@ -42,9 +39,7 @@ namespace PalindromicSubstrings.OutputFormatters
                 {
                     formatted.Add(substring);
                 }
-            }
-
-            //--
+            }           
 
             formatted.Sort((a, b) => b.Value.Length.CompareTo(a.Value.Length));
 
