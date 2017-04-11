@@ -36,7 +36,7 @@ namespace PalindromicSubstrings
                 Console.Write("\n\n'E' or 'e' to Exit. Any other key to continue. ");
                 instruction = Console.ReadKey();               
 
-            } while (instruction.KeyChar != 'e' || instruction.KeyChar == 'E');
+            } while (!(instruction.KeyChar == 'e' || instruction.KeyChar == 'E'));
 
 
         }
